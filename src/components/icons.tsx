@@ -3,12 +3,12 @@ import Image from 'next/image'
 
 export function Flower({className}:any) {
     return (
-        <Image className={className} src="1.svg" alt="flowerSVG" width={100} height={100} />
+        <Image className={className} src="blossom2.svg" alt="flowerSVG" width={300} height={300} />
     )
 }
 
 export function Panda({className}:any) {
     return (
-        <Image className={className} src="2.svg" alt="pandaSVG" width={200} height={200} />
+        <Image className={className} src="2.svg" alt="pandaSVG" width={300} height={300} />
     )
 }

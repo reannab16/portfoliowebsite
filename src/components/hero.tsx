@@ -3,27 +3,26 @@ import { Flower } from "./icons";
 import { Panda } from "./icons";
 
 export default function Hero() {
-    return (
-        <div className="bg-[#D4E6B5] h-[100vh] w-[100vw] flex flex-col justify-end items-center ">
-            <div className="flex flex-col justify-center items-center text-white w-full pl-[2vw] pr-[2vw] md:mb-[0.75vw] font-[helvetica]">
-                <div className="flex flex-row justify-start items-center w-full h-">
-                    <Panda className="mb-[-0.5vw] ml-[0.25vw]"/>
-                </div>
-                <div className="w-full font-extrabold md:text-xl text-xs flex flex-row justify-between items-center pl-[5px] pr-[5px] mb-[-0.5vw]">
-                    <div>DESIGNER x DEVELOPER</div>
-                    <div>MY WORK</div>
-                </div>
-                <div className="w-full font-extrabold text-4xl md:text-9xl flex flex-row justify-between items-center mb-[-0.5vw]">
-                    <p className="">REANNA</p>
-                    <Flower className="h-[30%] md:h-[80%]"/>
-                    <div>BAKSHANI</div>
-                </div>
-                <div className="w-full font-extrabold text-xs md:text-xl flex flex-row items-center">
-                    <div className="ml-[10vw]">ASPIRING CREATIVE</div>
-                    <div className="ml-[27vw]">ARTIST</div>
-                    <div className="ml-[28vw]">CONTACT</div>
-                </div>
-            </div>
+  return (
+    <div className="bg-[#cddfae] h-[100vh] w-[60vw] flex flex-col justify-center items-center ">
+      <div className="flex flex-col h-[65%] w-[80%] justify-between items-start">
+        <Flower className=" h-[70%] -mt-[14%]" />
+        <div className="-mt-[17%]">
+          <div className="font-bold text-[4vh] -mb-[2%] text-[#504256]">
+            Hi, I'm
+          </div>
+          <div className="font-extrabold text-white text-[7.5vh] pb-[0%] ">
+            REANNA BAKSHANI
+          </div>
+
+          <div className="text-lg w-[83%] text-[#524956]">
+            A designer and developer, based in London, who loves creative web
+            design! Feel free to contact me or check out my work on GitHub!
+          </div>
         </div>
-    )
+        <a href="" className="duration-300 hover:bg-[#524956] rounded-full hover:text-[#65a888] font-bold text-[2vh] bg-[#65a888] text-[#524956] p-4 pl-10 pr-10 hover:-translate-y-[2px]">contact me!</a>
+
+      </div>
+    </div>
+  );
 }
