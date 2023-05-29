@@ -75,6 +75,11 @@ body {
   writing-mode: vertical-rl;
 }
 
+.nav {
+  position: absolute;
+  top: 0;
+  right: 30px;
+}
 
 
 

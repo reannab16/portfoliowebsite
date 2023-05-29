@@ -8,8 +8,6 @@ import {
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { link } from "fs";
-import Link from "next/link";
 
 export function SideSocials() {
   const socials = [
@@ -38,11 +36,10 @@ export function SideSocials() {
   return (
     <div className="side-socials">
       {socials.map((social, index) => (
-        <Link key={index} href={social.href} target="_blank">
+        <a key={index} href={social.href} target="_blank">
           <FontAwesomeIcon icon={social.icon} className="h-[20px]"/>
-        </Link>
+        </a>
       ))}
-
     </div>
   )
 };

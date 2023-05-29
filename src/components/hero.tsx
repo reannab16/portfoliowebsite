@@ -20,8 +20,12 @@ export default function Hero() {
             design! Feel free to contact me or check out my work on GitHub!
           </div>
         </div>
-        <a href="" className="duration-300 hover:bg-[#524956] rounded-full hover:text-[#65a888] font-bold text-[2vh] bg-[#65a888] text-[#524956] p-4 pl-10 pr-10 hover:-translate-y-[2px]">contact me!</a>
-
+        <a
+          href=""
+          className="duration-300 hover:bg-[#524956] rounded-full hover:text-[#65a888] font-bold text-[2vh] bg-[#65a888] text-[#524956] p-4 pl-10 pr-10 hover:-translate-y-[2px]"
+        >
+          contact me!
+        </a>
       </div>
     </div>
   );

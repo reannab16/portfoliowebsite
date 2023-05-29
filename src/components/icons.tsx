@@ -12,3 +12,9 @@ export function Panda({className}:any) {
         <Image className={className} src="2.svg" alt="pandaSVG" width={300} height={300} />
     )
 }
+
+export function Cherry({className}:any) {
+    return (
+        <Image className={className} src="cherry.svg" alt="cherryBlossomSVG" width={100} height={100} />
+    )
+}

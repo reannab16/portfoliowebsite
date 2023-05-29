@@ -1,31 +1,24 @@
-import Hero from "@/components/hero"
-import { Panda } from "@/components/icons"
+import Hero from "@/components/hero";
+import { Panda } from "@/components/icons";
+import { Cherry } from "@/components/icons";
+import { SliderNav }  from "@/components/slidernav";
 
 export default function Home() {
   return (
     <main className="container mx-auto flex flex-row justify-around items-center bg-[#cddfae]">
-       {/* STATIC CONTENT */}
-       <div className="h-full w-5vw">
-        
-       </div>
-
+      {/* STATIC CONTENT */}
+      <div className="h-full w-5vw"></div>
 
       {/* DYNAMIC CONTENT */}
       <div className="h-full w-full">
-        <Hero/>
+        <Hero />
       </div>
 
       {/* STATIC CONTENT */}
-      <div className="flex flex-col items-end h-[75vh] w-[30vw] justify-between mr-[5%]">
-        <div className="sans-class nav flex flex-col justify-center items-end mb-auto text-lg text-[#524956]">
-          <a className="hover:bg-[#65a888] pl-2 pr-2 mt-1 rounded-full duration-300 hover:-translate-y-[1.5px]" href="">about</a>
-          <a className="hover:bg-[#65a888] pl-2 pr-2 mt-1 rounded-full duration-300 hover:-translate-y-[1.5px]" href="">projects</a>
-          <a className="hover:bg-[#65a888] pl-2 pr-2 mt-1 rounded-full duration-300 hover:-translate-y-[1.5px]" href="">experience</a>
-        </div>
-        <Panda className="mt-auto h-[58%]"/>
+      <div className="flex flex-col items-end h-[75vh] w-[30vw] justify-end mr-[5%]">
+        
+        <Panda className="h-[58%]" />
       </div>
-      
-      
     </main>
-  )
+  );
 }
