@@ -18,3 +18,9 @@ export function Cherry({className}:any) {
         <Image className={className} src="cherry.svg" alt="cherryBlossomSVG" width={100} height={100} />
     )
 }
+
+export function Me({className}:any) {
+    return (
+        <Image className={className} src="me.svg" alt="me" width={200} height={200} />
+    )
+}
