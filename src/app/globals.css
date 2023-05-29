@@ -52,7 +52,7 @@ body {
 
 .side-email {
   position: fixed;
-  top: 35vh;
+  top: 70vh;
   right: 30px;
   transform: translateY(-50%);
   display: flex;
@@ -64,8 +64,8 @@ body {
 .side-email::after {
   content: '';
   position: absolute;
-  top: calc(100% - 31rem);
-  height: 150%;
+  top: calc(100% + 2rem);
+  height: 100%;
   width: 1px;
   background: #65a888; 
 }

@@ -18,9 +18,9 @@ export default function Home() {
       {/* STATIC CONTENT */}
       <div className="flex flex-col items-end h-[75vh] w-[30vw] justify-between mr-[5%]">
         <div className="sans-class nav flex flex-col justify-center items-end mb-auto text-lg text-[#524956]">
-          <a className="hover:bg-[#65a888] pl-2 pr-2 mt-1 rounded-full duration-300" href="">about</a>
-          <a className="hover:bg-[#65a888] pl-2 pr-2 mt-1 rounded-full duration-300" href="">projects</a>
-          <a className="hover:bg-[#65a888] pl-2 pr-2 mt-1 rounded-full duration-300" href="">experience</a>
+          <a className="hover:bg-[#65a888] pl-2 pr-2 mt-1 rounded-full duration-300 hover:-translate-y-[1.5px]" href="">about</a>
+          <a className="hover:bg-[#65a888] pl-2 pr-2 mt-1 rounded-full duration-300 hover:-translate-y-[1.5px]" href="">projects</a>
+          <a className="hover:bg-[#65a888] pl-2 pr-2 mt-1 rounded-full duration-300 hover:-translate-y-[1.5px]" href="">experience</a>
         </div>
         <Panda className="mt-auto h-[58%]"/>
       </div>
