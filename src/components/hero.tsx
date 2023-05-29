@@ -9,7 +9,7 @@ export default function Hero() {
         <Flower className=" h-[70%] -mt-[14%]" />
         <div className="-mt-[17%]">
           <div className="font-bold text-[4vh] -mb-[2%] text-[#504256]">
-            Hi, I'm
+            Hi, I&apos;m
           </div>
           <div className="font-extrabold text-white text-[7.5vh] pb-[0%] ">
             REANNA BAKSHANI

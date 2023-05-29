@@ -3,6 +3,7 @@ import { Panda } from "@/components/icons";
 import { Cherry } from "@/components/icons";
 import { SliderNav }  from "@/components/slidernav";
 import  About  from "@/components/about";
+import Projects from "@/components/projects";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <div className="h-full w-full">
         <Hero />
         <About/>
+        <Projects/>
       </div>
 
       {/* STATIC CONTENT */}

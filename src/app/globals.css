@@ -8,7 +8,13 @@
 } */
 
 
-
+:root {
+  --lightGreen: #cddfae;
+  --darkGreen: #65a888;
+  --pandaLight: #504256;
+  --pandaDark: #524956;
+  --lightPink: #fbe4ea;
+}
 
 
 body {
@@ -105,4 +111,28 @@ body {
 
 .nav-items::after:hover {
   transform:translateY(0);
+}
+
+.work-a {
+  position: relative;
+}
+
+.work-a::after {
+  content:"";
+  position: absolute;
+  top: 20px;
+  right: calc(100% - 0px);
+  height: 2px;
+  width: 0px;
+  background-color: #65a888;
+  transition: 300ms;
+}
+
+.work-a:hover::after {
+  content:"";
+  height: 2px;
+  width: 68px;
+  right: calc(100% - 68px);
+  background-color: #65a888;
+
 }
