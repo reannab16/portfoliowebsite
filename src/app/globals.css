@@ -76,10 +76,12 @@ body {
 }
 
 .nav {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 30px;
 }
+
+
 
 
 
