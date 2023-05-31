@@ -3,9 +3,9 @@
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
 
-/* * {
+* {
   border: solid red 2px;
-} */
+}
 
 
 :root {
@@ -134,5 +134,4 @@ body {
   width: 68px;
   right: calc(100% - 68px);
   background-color: #65a888;
-
 }

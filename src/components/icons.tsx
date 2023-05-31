@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export function Flower({className}:any) {
     return (
-        <Image className={className} src="blossom2.svg" alt="flowerSVG" width={300} height={300} />
+        <Image className={className} src="new.svg" alt="flowerSVG" width={300} height={300} />
     )
 }
 
