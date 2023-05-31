@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Projects() {
     return(
-        <div className="bg-[#cddfae] h-[100vh] w-[60vw] flex flex-col justify-center items-center">
+        <div className="bg-[#cddfae] h-[100vh] w-[60vw] flex flex-col justify-center items-center max-w-[1280px]">
             <div className="flex flex-col justify-center items-center h-[20%] w-[73.5%] mr-[6.5%]">
                 <div className="flex flex-row justify-start items-center h-[60%] w-full">
                     <div className="text-7xl font-extrabold text-[var(--darkGreen)]">PROJECTS</div>

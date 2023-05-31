@@ -2,8 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
-
-/* * {
+/* 
+* {
   border: solid red 2px;
 } */
 
@@ -134,4 +134,32 @@ body {
   width: 68px;
   right: calc(100% - 68px);
   background-color: #65a888;
+}
+
+@media (max-width: 375px) {
+  .myName {
+    font-size: 3rem;
+  }
+
+  .hero-container {
+    height: 75%;
+  }
+}
+
+@media (min-width: 1536px) {
+  .side-socials {
+    top: 85vh;
+    left: 500px;
+  }
+  
+  .side-email {
+    top: 80vh;
+    right: 475px;
+  }
+
+  .nav {
+    top: 10px;
+    right: 500px;
+  }
+  
 }
