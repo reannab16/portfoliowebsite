@@ -4,7 +4,7 @@ import { Panda } from "./icons";
 
 export default function Hero() {
   return (
-    <div className="bg-[#cddfae] h-[100vh] w-[60vw] flex flex-col justify-center items-center max-w-[1280px]">
+    <div className="bg-[#cddfae] h-[100vh] w-[60vw] flex flex-col justify-center items-center max-w-[1280px] sm:pl-0 pl-5" id="home">
       <div className=" hero-container flex flex-col h-[65%] md:w-[80%] w-[95%] justify-between items-start">
         <Flower className=" md:h-[60%] h-[30%] -mt-[14%]"/>
         <div className="-mt-[17%]">

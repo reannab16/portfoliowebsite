@@ -3,7 +3,7 @@ import { Me } from "./icons";
 
 export default function About() {
   return (
-    <div className="bg-[#cddfae] h-[100vh] md:w-[60vw] w-[100%] flex flex-col sm:justify-start justify-center items-center max-w-[1280px]">
+    <div id="about" className="bg-[#cddfae] h-[100vh] md:w-[60vw] w-[100%] flex flex-col sm:justify-start justify-center items-center max-w-[1280px]">
       <div className="h-[90%] md:w-[80%] w-[90%] flex flex-col items-center justify-center md:mr-[10%]">
         <div className="h-[50%] xl:w-[50%] flex-col flex justify-center items-center md:w-[70%] w-[60%] whitespace-nowrap">
           <Me className="md:-mb-[8%] md:-mt-0 -mt-5" />
@@ -26,7 +26,7 @@ export default function About() {
           <br />
           Check out{" "}
           <a
-            href="#"
+            href="#projects"
             className="text-[#65a888] italic work-a"
           >
             my work

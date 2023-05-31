@@ -35,8 +35,12 @@ const navLinks: navLink[] = [
     href: "#about",
   },
   {
-    name: "projects",
+    name: "projects & art",
     href: "#projects",
+  },
+  {
+    name: "skills",
+    href: "#skills",
   },
   {
     name: "contact",
