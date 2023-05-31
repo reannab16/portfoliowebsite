@@ -166,3 +166,7 @@ body {
   }
   
 }
+
+.skills::after {
+  top: calc(100% + 0.3rem);
+}

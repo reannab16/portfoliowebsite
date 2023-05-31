@@ -1,4 +1,5 @@
 import React from "react";
+import { LeafClove, LeafStem } from "./icons";
 
 export default function Projects() {
 
@@ -50,11 +51,17 @@ export default function Projects() {
         <div className="bg-[#cddfae] xl:h-[100vh] xl:w-[60vw] flex flex-col justify-center items-center max-w-[1280px] w-[100vw]" id="projects">
             <div className="flex flex-col justify-center items-center xl:h-[20%] xl:w-[73.5%] mr-[6.5%] xl:opacity-100 opacity-0 h-0 w-0">
                 <div className="flex flex-row justify-start items-center h-[60%] w-full">
-                    <div className="text-7xl font-extrabold text-[var(--darkGreen)]">PROJECTS</div>
+                    <div className="text-7xl font-extrabold text-[var(--darkGreen)] relative">
+                        <LeafClove className="absolute h-[100%] -top-[4.3rem] left-[4.3rem]"/>
+                        PROJECTS
+                        </div>
                     <div className="text-5xl font-extrabold italic text-white ml-[2%]">&</div>
                 </div>
                 <div className="flex flex-row justify-end items-center h-[40%] w-full">
-                    <div className="text-5xl font-extrabold text-[var(--lightPink)]">ARTWORK</div>
+                    <div className="text-5xl font-extrabold text-[var(--lightPink)] relative">
+                        <LeafStem className="absolute -top-10 h-12 left-[8.6rem] "/>
+                        ARTWORK
+                        </div>
                 </div>
             </div>
             <div className="flex flex-row xl:h-[50%] xl:w-[73.5%] mr-[6.5%] justify-between items-center xl:opacity-100 opacity-0 h-0 w-0">
@@ -65,7 +72,8 @@ export default function Projects() {
                                 key={item.name}
                                 className="bg-[var(--darkGreen)] h-[47%] w-[48.5%] overflow-hidden relative flex flex-col items-center justify-center"
                                 href="">
-                                    <img src={item.src} alt={item.name} className="h-[100%] w-[100%] object-cover opacity-20 hover:opacity-100 duration-300" />
+                                    <img src={item.src} alt={item.name} className="h-[100%] w-[100%] object-cover" />
+                                    <div className="bg-[var(--darkGreen)] h-full w-full z-30 absolute top-0 bottom-0 opacity-70 hover:opacity-0"></div>
 
                             </a>
                         )
@@ -76,9 +84,10 @@ export default function Projects() {
                         return(
                             <a
                                 key={item.name}
-                                className="bg-[var(--lightPink)] h-[41%] w-[48%] mb-[-1.5%]"
+                                className="bg-[var(--lightPink)] h-[41%] w-[48%] mb-[-1.5%] relative flex flex-col items-center justify-center"
                                 href="">
-                                    <img src={item.src} alt={item.name} className="h-[100%] w-[100%] object-cover opacity-20 hover:opacity-100 duration-300"/>
+                                    <img src={item.src} alt={item.name} className="h-[100%] w-[100%] object-cover"/>
+                                    <div className="bg-[var(--darkGreen)] h-full w-full z-30 absolute top-0 bottom-0 opacity-70 hover:opacity-0"></div>
 
                             </a>
                         )

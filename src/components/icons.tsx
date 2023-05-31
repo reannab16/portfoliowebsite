@@ -24,14 +24,20 @@ export function Me({className}:any) {
     )
 }
 
-export function OldPortfolio({className}:any) {
+export function LeafClove({className}:any) {
     return (
-        <img className={className} src="Portfolio0.png" alt="old Portfolio" width={100} height={100} />
+        <img className={className} src="leafClove.svg" alt="old Portfolio" width={100} height={100} />
     )
 }
 
-export function TicTacToe({className}:any) {
+export function LeafStem({className}:any) {
     return (
-        <img className={className} src="tictactoe.png" alt="old Portfolio" width={100} height={100} />
+        <img className={className} src="LeafStem.svg" alt="old Portfolio" width={100} height={100} />
+    )
+}
+
+export function MiniFlower({className}:any) {
+    return (
+        <img className={className} src="miniFlower.svg" alt="old Portfolio" width={100} height={100} />
     )
 }
