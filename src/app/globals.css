@@ -149,23 +149,23 @@ body {
   }
 }
 
-@media (min-width: 1536px) {
+/* @media (min-width: 1536px) {
   .side-socials {
     top: 85vh;
-    left: 500px;
+    left: 250px;
   }
   
   .side-email {
     top: 80vh;
-    right: 475px;
+    right: 235px;
   }
 
   .nav {
     top: 10px;
-    right: 500px;
+    right: 250px;
   }
   
-}
+} */
 
 .skills::after {
   top: calc(100% + 0.3rem);
