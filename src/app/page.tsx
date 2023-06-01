@@ -5,6 +5,7 @@ import { SliderNav }  from "@/components/slidernav";
 import  About  from "@/components/about";
 import Projects from "@/components/projects";
 import Skills from "@/components/skills";
+import Contact from "@/components/contact";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         <About/>
         <Projects/>
         <Skills/>
+        <Contact/>
       </div>
 
       {/* STATIC CONTENT */}
