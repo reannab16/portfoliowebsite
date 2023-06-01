@@ -26,7 +26,7 @@ export default function Skills() {
 
 
     return(
-        <div className="bg-[#cddfae] xl:h-[100vh] md:w-[60vw] flex flex-col justify-center items-center max-w-[1280px] w-[100%]" id="skills">
+        <div className="bg-[#cddfae] xl:h-[100vh] md:w-[60vw] flex flex-col justify-center items-center max-w-[1280px] w-[100%] mt-20" id="skills">
             <div className="text-[var(--pandaLight)] flex items-center justify-center right-4 text-6xl font-extrabold relative skills after:h-[0.35rem] after:w-[15.6rem] after:bg-[var(--lightPink)] after:absolute after:top-[calc(100% + 1rem)] after:-left-5">
                 SKILLS
                 <MiniFlower className="absolute top-[2.1rem] h-16 left-48"/>
