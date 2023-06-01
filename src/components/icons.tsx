@@ -26,18 +26,18 @@ export function Me({className}:any) {
 
 export function LeafClove({className}:any) {
     return (
-        <img className={className} src="leafClove.svg" alt="old Portfolio" width={100} height={100} />
+        <img className={className} src="leafClove.svg" alt="leaves" width={100} height={100} />
     )
 }
 
 export function LeafStem({className}:any) {
     return (
-        <img className={className} src="LeafStem.svg" alt="old Portfolio" width={100} height={100} />
+        <img className={className} src="LeafStem.svg" alt="leaf" width={100} height={100} />
     )
 }
 
 export function MiniFlower({className}:any) {
     return (
-        <img className={className} src="miniFlower.svg" alt="old Portfolio" width={100} height={100} />
+        <img className={className} src="miniFlower.svg" alt="mini flower" width={100} height={100} />
     )
 }
