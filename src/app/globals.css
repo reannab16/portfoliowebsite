@@ -3,9 +3,9 @@
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
 
-/* * {
+* {
   border: solid red 2px;
-} */
+}
 
 .html {
   scroll-behavior: smooth;
@@ -184,4 +184,11 @@ body {
 
 .skills::after {
   top: calc(100% + 0.3rem);
+}
+
+@media (max-width: 1300px) {
+  .proj-contain-2 {
+    height: 100vh;
+    width: 60vw;
+  }
 }

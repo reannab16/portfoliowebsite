@@ -48,30 +48,30 @@ export default function Projects() {
 
 
     return(
-        <div className="bg-[#cddfae] xl:h-[100vh] xl:w-[60vw] flex flex-col justify-center items-center max-w-[1280px] w-[100vw] max-h-[70rem]" id="projects">
-            <div className="h-full w-[80%] flex flex-col justify-center items-center">
-                <div className="flex flex-col justify-center items-center xl:h-[20%] xl:w-[91.875%] xl:opacity-100 opacity-0 h-0 w-0">
-                    <div className="flex flex-row justify-start items-center h-[60%] w-full">
+        <div className="proj-contain-1 bg-[#cddfae] h-[100vh] w-[60vw] flex flex-col justify-center items-center max-w-[1280px] max-h-[70rem]" id="projects">
+            <div className="proj-contain-2 h-full w-[80%] flex flex-col justify-center items-center">
+                <div className="proj-headers-contain flex flex-col justify-center items-center h-[20%] w-[91.875%]">
+                    <div className="projtext-contain flex flex-row justify-start items-center h-[60%] w-full">
                         <div className="text-7xl font-extrabold text-[var(--darkGreen)] relative">
                             <LeafClove className="absolute h-[100%] -top-[4.3rem] left-[4.3rem]"/>
                             PROJECTS
                             </div>
-                        <div className="text-5xl font-extrabold italic text-white ml-[2%]">&</div>
+                        <div className="proj-and text-5xl font-extrabold italic text-white ml-[2%]">&</div>
                     </div>
-                    <div className="flex flex-row justify-end items-center h-[40%] w-full">
+                    <div className="arttext-contain flex flex-row justify-end items-center h-[40%] w-full">
                         <div className="text-5xl font-extrabold text-[var(--lightPink)] relative">
                             <LeafStem className="absolute -top-10 h-12 left-[8.6rem] "/>
                             ARTWORK
                             </div>
                     </div>
                 </div>
-                <div className="flex flex-row xl:h-[50%] xl:w-[91.875%] justify-between items-center xl:opacity-100 opacity-0 h-0 w-0">
-                    <div className="flex flex-row justify-around items-around h-[110%] w-[55%] flex-wrap mt-[-7%]">
+                <div className="projandart-contain flex flex-row h-[50%] w-[91.875%] justify-between items-center">
+                    <div className="projproj-contain flex flex-row justify-around items-around h-[110%] w-[55%] flex-wrap mt-[-7%]">
                         {Projects.map((item)=> {
                             return(
                                 <a
                                     key={item.name}
-                                    className="bg-[var(--darkGreen)] h-[47%] w-[48.5%] overflow-hidden relative flex flex-col items-center justify-center"
+                                    className="projboxes bg-[var(--darkGreen)] h-[47%] w-[48.5%] overflow-hidden relative flex flex-col items-center justify-center"
                                     href="">
                                         <img src={item.src} alt={item.name} className="h-[100%] w-[100%] object-cover" />
                                         <div className="bg-[var(--darkGreen)] h-full w-full z-30 absolute top-0 bottom-0 opacity-70 hover:opacity-0"></div>
@@ -80,7 +80,7 @@ export default function Projects() {
                             )
                         })}
                     </div>
-                    <div className="flex flex-row justify-around items-around h-[100%] w-[41.9%] flex-wrap">
+                    <div className="artboxes flex flex-row justify-around items-around h-[100%] w-[41.9%] flex-wrap">
                         {Artwork.map((item)=>{
                             return(
                                 <a
@@ -93,7 +93,7 @@ export default function Projects() {
                                 </a>
                             )
                         })}
-                        <div className="text-[var(--darkGreen)] text-center text-base mb-[-3%]">Purchase my art on my <a href="https://www.redbubble.com/people/oopsiedaisy/shop?asc=u&ref=account-nav-dropdown" target="_blank" className="redbubble">redubble</a> and view more on my art <a href="https://www.instagram.com/reanna_art/" className="art-insta" target="_blank">insta</a>!</div>
+                        <div className="art-purchase text-[var(--darkGreen)] text-center text-base mb-[-3%]">Purchase my art on my <a href="https://www.redbubble.com/people/oopsiedaisy/shop?asc=u&ref=account-nav-dropdown" target="_blank" className="redbubble">redubble</a> and view more on my art <a href="https://www.instagram.com/reanna_art/" className="art-insta" target="_blank">insta</a>!</div>
 
                     </div>
                 </div>

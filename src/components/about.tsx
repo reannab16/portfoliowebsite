@@ -9,8 +9,8 @@ export default function About() {
           <Me className="md:-mb-[6%] md:-mt-0 -mt-5" />
           <div className="md:text-6xl text-3xl text-[#65a888] font-extrabold max-[962px]:text-5xl md:-mt-0 -mt-7 max-[1025px]:pb-5">ABOUT ME</div>
         </div>
-        <div className=" pink-block md:h-[61%] sm:h-[80%] h-[93%] max-h-[45rem] bg-[#fbe4ea] md:w-[92%] w-[100%] max-w-4xl md:-mt-[3%] rounded-xl opacity-80 md:pl-[11.1%] md:pr-[11.1%] pl-[8.5%] pr-[8.5%] text-base text-[#504256] text-left flex justify-center items-center ">
-          <div>
+        <div className=" pink-block md:h-[61%] sm:h-[80%] h-[93%] max-h-[45rem] bg-[#fbe4ea] md:w-[92%] w-[100%] max-w-4xl md:-mt-[3%] rounded-xl opacity-80 md:pl-[10.1%] md:pr-[10.1%] pl-[8.5%] pr-[8.5%] text-base text-[#504256] text-left flex justify-center items-center p-2 ">
+          <div className="pt-2 pb-2">
           Welcome to my portfolio website! I&apos;m Reanna, a passionate artist,
           illustrator, <span className="text-[#65a888] italic">designer</span>{" "}
           and <span className="text-[#65a888] italic">developer</span>.

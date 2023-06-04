@@ -3,7 +3,7 @@ import { LeafStem } from "./icons";
 
 export default function Contact() {
     return(
-        <div id="contact" className="bg-[#cddfae] h-[100vh] md:w-[60vw] flex flex-col justify-center items-center max-w-[1280px] w-[100vw] overflow-hidden mt-14 max-h-[50rem] 2xl:-mt-0 2xl:mb-20 2xl:pr-96">
+        <div id="contact" className="bg-[#cddfae] h-[100vh] md:w-[60vw] flex flex-col justify-center items-center max-w-[1280px] w-[100%] overflow-hidden mt-14 max-h-[50rem] 2xl:-mt-0 2xl:mb-20 2xl:pr-96">
             <div className="md:text-6xl text-5xl text-[var(--lightPink)] font-extrabold pb-3 relative mt-3 2xl:ml-96">
                 CONTACT
                 <LeafStem className="absolute md:h-12 scale-x-[-1] md:-top-10 md:right-7 h-11 -top-9 right-4"/>
