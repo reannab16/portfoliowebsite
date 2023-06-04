@@ -32,7 +32,7 @@ export function LeafClove({className}:any) {
 
 export function LeafStem({className}:any) {
     return (
-        <img className={className} src="LeafStem.svg" alt="leaf" width={100} height={100} />
+        <img className={className} src="leafStem.svg" alt="leaf" width={100} height={100} />
     )
 }
 

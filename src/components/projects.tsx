@@ -11,7 +11,7 @@ export default function Projects() {
     const Projects: Projecttype[] = [
         {
           name: "firstportfolio",
-          src: "portfolio0.png",
+          src: "Portfolio0.png",
         },
         {
           name: "tictactoe",
