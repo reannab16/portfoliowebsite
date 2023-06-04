@@ -192,3 +192,40 @@ body {
     width: 60vw;
   }
 }
+
+@media (max-width: 1096px) {
+  .proj-contain-2 {
+    height: 100vh;
+    width: 48vw;
+  }
+
+  .arttext-contain, .proj-and {
+    font-size: 2rem;
+  }
+
+  .arttext-contain img {
+    position: absolute;
+    height: 100%;
+    left: 4.5rem;
+    top: -1.75rem;
+  }
+
+  .projtext-contain {
+    font-size: 3rem;
+  }
+
+  .projtext-contain img {
+    height: 80%;
+    top: -2.3rem;
+    left: 1.9rem;
+  }
+
+  .projandart-contain {
+    height: 43%;
+  }
+
+  .artboxes {
+    height: 35%;
+  }
+  
+}
