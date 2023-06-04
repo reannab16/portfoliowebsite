@@ -116,28 +116,43 @@ body {
   transform:translateY(0);
 }
 
-.work-a {
+.work-a, .redbubble, .art-insta {
   position: relative;
 }
 
-.work-a::after {
+.work-a::after, .redbubble::after, .art-insta::after {
   content:"";
-  position: absolute;
-  top: 20px;
-  right: calc(100% - 0px);
+  position:absolute;
+  top:20px;
   height: 2px;
   width: 0px;
-  background-color: #65a888;
+  background-color:#65a888;
   transition: 300ms;
+  right: calc(100% - 0px);
+}
+
+.work-a:hover::after, .redbubble:hover::after, .art-insta:hover::after {
+  content:"";
+  height: 2px;
+  background-color: #65a888;
 }
 
 .work-a:hover::after {
-  content:"";
-  height: 2px;
   width: 68px;
   right: calc(100% - 68px);
-  background-color: #65a888;
 }
+
+.redbubble:hover::after {
+  width: 67px;
+  right: calc(100% - 67px);
+}
+
+.art-insta:hover::after {
+  width: 40px;
+  right: calc(100% - 40px);
+}
+
+
 
 @media (max-width: 375px) {
   .myName {
@@ -170,4 +185,3 @@ body {
 .skills::after {
   top: calc(100% + 0.3rem);
 }
-

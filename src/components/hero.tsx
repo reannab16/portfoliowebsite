@@ -22,7 +22,7 @@ export default function Hero() {
           </div>
         </div>
         <a
-          href=""
+          href="#contact"
           className="mt-[7.5%] duration-300 hover:bg-[#524956] rounded-full hover:text-[#65a888] font-bold text-base bg-[#65a888] text-[#524956] p-4 md:pl-10 md:pr-10 pl-5 pr-5 hover:-translate-y-[2px]"
         >
           contact me!

@@ -92,7 +92,7 @@ export default function Projects() {
                             </a>
                         )
                     })}
-                    <div className="text-[var(--darkGreen)] text-center text-base mb-[-3%]">Purchase my art on redubble and view more on my art insta!</div>
+                    <div className="text-[var(--darkGreen)] text-center text-base mb-[-3%]">Purchase my art on my <a href="https://www.redbubble.com/people/oopsiedaisy/shop?asc=u&ref=account-nav-dropdown" target="_blank" className="redbubble">redubble</a> and view more on my art <a href="https://www.instagram.com/reanna_art/" className="art-insta" target="_blank">insta</a>!</div>
 
                 </div>
 
