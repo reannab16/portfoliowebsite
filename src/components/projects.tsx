@@ -30,70 +30,72 @@ export default function Projects() {
       const Artwork: Projecttype[] = [
         {
             name: "UFO",
-            src: "UFO.png",
+            src: "UFO-compress.jpeg",
           },
           {
             name: "butterflygirl",
-            src: "butterfly-girl.png",
+            src: "butterfly-girl-compress.jpeg",
           },
           {
             name: "rose",
-            src: "rose.jpg",
+            src: "rose-compress.jpeg",
           },
           {
             name: "wildflower",
-            src: "wildflower.jpg",
+            src: "wildflower-compress.jpeg",
           },
       ]
 
 
     return(
-        <div className="bg-[#cddfae] xl:h-[100vh] xl:w-[60vw] flex flex-col justify-center items-center max-w-[1280px] w-[100vw]" id="projects">
-            <div className="flex flex-col justify-center items-center xl:h-[20%] xl:w-[73.5%] mr-[6.5%] xl:opacity-100 opacity-0 h-0 w-0">
-                <div className="flex flex-row justify-start items-center h-[60%] w-full">
-                    <div className="text-7xl font-extrabold text-[var(--darkGreen)] relative">
-                        <LeafClove className="absolute h-[100%] -top-[4.3rem] left-[4.3rem]"/>
-                        PROJECTS
-                        </div>
-                    <div className="text-5xl font-extrabold italic text-white ml-[2%]">&</div>
+        <div className="bg-[#cddfae] xl:h-[100vh] xl:w-[60vw] flex flex-col justify-center items-center max-w-[1280px] w-[100vw] max-h-[70rem]" id="projects">
+            <div className="h-full w-[80%] flex flex-col justify-center items-center">
+                <div className="flex flex-col justify-center items-center xl:h-[20%] xl:w-[91.875%] xl:opacity-100 opacity-0 h-0 w-0">
+                    <div className="flex flex-row justify-start items-center h-[60%] w-full">
+                        <div className="text-7xl font-extrabold text-[var(--darkGreen)] relative">
+                            <LeafClove className="absolute h-[100%] -top-[4.3rem] left-[4.3rem]"/>
+                            PROJECTS
+                            </div>
+                        <div className="text-5xl font-extrabold italic text-white ml-[2%]">&</div>
+                    </div>
+                    <div className="flex flex-row justify-end items-center h-[40%] w-full">
+                        <div className="text-5xl font-extrabold text-[var(--lightPink)] relative">
+                            <LeafStem className="absolute -top-10 h-12 left-[8.6rem] "/>
+                            ARTWORK
+                            </div>
+                    </div>
                 </div>
-                <div className="flex flex-row justify-end items-center h-[40%] w-full">
-                    <div className="text-5xl font-extrabold text-[var(--lightPink)] relative">
-                        <LeafStem className="absolute -top-10 h-12 left-[8.6rem] "/>
-                        ARTWORK
-                        </div>
-                </div>
-            </div>
-            <div className="flex flex-row xl:h-[50%] xl:w-[73.5%] mr-[6.5%] justify-between items-center xl:opacity-100 opacity-0 h-0 w-0">
-                <div className="flex flex-row justify-around items-around h-[110%] w-[55%] flex-wrap mt-[-7%]">
-                    {Projects.map((item)=> {
-                        return(
-                            <a
-                                key={item.name}
-                                className="bg-[var(--darkGreen)] h-[47%] w-[48.5%] overflow-hidden relative flex flex-col items-center justify-center"
-                                href="">
-                                    <img src={item.src} alt={item.name} className="h-[100%] w-[100%] object-cover" />
-                                    <div className="bg-[var(--darkGreen)] h-full w-full z-30 absolute top-0 bottom-0 opacity-70 hover:opacity-0"></div>
+                <div className="flex flex-row xl:h-[50%] xl:w-[91.875%] justify-between items-center xl:opacity-100 opacity-0 h-0 w-0">
+                    <div className="flex flex-row justify-around items-around h-[110%] w-[55%] flex-wrap mt-[-7%]">
+                        {Projects.map((item)=> {
+                            return(
+                                <a
+                                    key={item.name}
+                                    className="bg-[var(--darkGreen)] h-[47%] w-[48.5%] overflow-hidden relative flex flex-col items-center justify-center"
+                                    href="">
+                                        <img src={item.src} alt={item.name} className="h-[100%] w-[100%] object-cover" />
+                                        <div className="bg-[var(--darkGreen)] h-full w-full z-30 absolute top-0 bottom-0 opacity-70 hover:opacity-0"></div>
 
-                            </a>
-                        )
-                    })}
-                </div>
-                <div className="flex flex-row justify-around items-around h-[100%] w-[41.9%] flex-wrap">
-                    {Artwork.map((item)=>{
-                        return(
-                            <a
-                                key={item.name}
-                                className="bg-[var(--lightPink)] h-[41%] w-[48%] mb-[-1.5%] relative flex flex-col items-center justify-center"
-                                href="">
-                                    <img src={item.src} alt={item.name} className="h-[100%] w-[100%] object-cover"/>
-                                    <div className="bg-[var(--darkGreen)] h-full w-full z-30 absolute top-0 bottom-0 opacity-70 hover:opacity-0"></div>
+                                </a>
+                            )
+                        })}
+                    </div>
+                    <div className="flex flex-row justify-around items-around h-[100%] w-[41.9%] flex-wrap">
+                        {Artwork.map((item)=>{
+                            return(
+                                <a
+                                    key={item.name}
+                                    className="bg-[var(--lightPink)] h-[41%] w-[48%] mb-[-1.5%] relative flex flex-col items-center justify-center"
+                                    href="">
+                                        <img src={item.src} alt={item.name} className="h-[100%] w-[100%] object-cover"/>
+                                        <div className="bg-[var(--darkGreen)] h-full w-full z-30 absolute top-0 bottom-0 opacity-70 hover:opacity-0"></div>
 
-                            </a>
-                        )
-                    })}
-                    <div className="text-[var(--darkGreen)] text-center text-base mb-[-3%]">Purchase my art on my <a href="https://www.redbubble.com/people/oopsiedaisy/shop?asc=u&ref=account-nav-dropdown" target="_blank" className="redbubble">redubble</a> and view more on my art <a href="https://www.instagram.com/reanna_art/" className="art-insta" target="_blank">insta</a>!</div>
+                                </a>
+                            )
+                        })}
+                        <div className="text-[var(--darkGreen)] text-center text-base mb-[-3%]">Purchase my art on my <a href="https://www.redbubble.com/people/oopsiedaisy/shop?asc=u&ref=account-nav-dropdown" target="_blank" className="redbubble">redubble</a> and view more on my art <a href="https://www.instagram.com/reanna_art/" className="art-insta" target="_blank">insta</a>!</div>
 
+                    </div>
                 </div>
 
             </div>

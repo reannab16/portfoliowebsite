@@ -12,7 +12,7 @@ export default function Home() {
     <main className="container mx-auto flex flex-row sm:justify-start justify-center items-center bg-[#cddfae]">
 
       {/* DYNAMIC CONTENT */}
-      <div className="h-full w-full overflow-x-hidden">
+      <div className="h-[full] w-full overflow-x-hidden">
         <Hero />
         <About/>
         <Projects/>

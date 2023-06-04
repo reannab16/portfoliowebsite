@@ -3,13 +3,13 @@ import { Me } from "./icons";
 
 export default function About() {
   return (
-    <div id="about" className="bg-[#cddfae] h-[100vh] md:w-[60vw] w-[100%] flex flex-col sm:justify-start justify-center items-center max-w-[1280px]">
-      <div className="h-[90%] md:w-[80%] w-[90%] flex flex-col items-center justify-center ">
+    <div id="about" className="bg-[#cddfae] h-[100vh] max-h-[70rem] md:w-[60vw] w-[100%] flex flex-col sm:justify-start justify-center items-center max-w-[1280px] 2xl:justify-start">
+      <div className="h-[90%] md:w-[80%] w-[90%] flex flex-col items-center justify-center sm:justify-start xl:justify-start ">
         <div className="h-[50%] xl:w-[50%] flex-col flex justify-center items-center md:w-[70%] w-[60%] whitespace-nowrap">
-          <Me className="md:-mb-[8%] md:-mt-0 -mt-5" />
+          <Me className="md:-mb-[6%] md:-mt-0 -mt-5" />
           <div className="md:text-6xl text-3xl text-[#65a888] font-extrabold max-[962px]:text-5xl md:-mt-0 -mt-7 max-[1025px]:pb-5">ABOUT ME</div>
         </div>
-        <div className=" pink-block md:h-[61%] sm:h-[80%] h-[93%] bg-[#fbe4ea] md:w-[92%] w-[100%] max-w-4xl md:-mt-[3%] rounded-xl opacity-80 md:pl-[11.1%] md:pr-[11.1%] pl-[8.5%] pr-[8.5%] text-base text-[#504256] text-left flex justify-center items-center ">
+        <div className=" pink-block md:h-[61%] sm:h-[80%] h-[93%] max-h-[45rem] bg-[#fbe4ea] md:w-[92%] w-[100%] max-w-4xl md:-mt-[3%] rounded-xl opacity-80 md:pl-[11.1%] md:pr-[11.1%] pl-[8.5%] pr-[8.5%] text-base text-[#504256] text-left flex justify-center items-center ">
           <div>
           Welcome to my portfolio website! I&apos;m Reanna, a passionate artist,
           illustrator, <span className="text-[#65a888] italic">designer</span>{" "}
