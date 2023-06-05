@@ -366,6 +366,10 @@ body {
     border-radius: 0.75rem;
   }
 
+  .proj-cover {
+    border-radius: 0.75rem;
+  }
+
   .artboxes-contain {
     flex-direction: row;
     align-items: center;
@@ -394,7 +398,7 @@ body {
   }
 
   .artboxes {
-    height: 11rem;
+    height: 9rem;
     width: 7rem;
     margin: 0.1rem;
   }

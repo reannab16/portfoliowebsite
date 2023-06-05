@@ -74,7 +74,7 @@ export default function Projects() {
                                     className="projboxes bg-[var(--darkGreen)] h-[47%] w-[48.5%] overflow-hidden relative flex flex-col items-center justify-center"
                                     href="">
                                         <img src={item.src} alt={item.name} className="h-[100%] w-[100%] object-cover" />
-                                        <div className="bg-[var(--darkGreen)] h-full w-full z-30 absolute top-0 bottom-0 opacity-70 hover:opacity-0"></div>
+                                        <div className="proj-cover bg-[var(--darkGreen)] h-full w-full z-30 absolute top-0 bottom-0 opacity-70 hover:opacity-0"></div>
 
                                 </a>
                             )
