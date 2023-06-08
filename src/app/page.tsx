@@ -40,7 +40,7 @@ export default function Home() {
         variants={imgVariants}
         initial="hidden"
         animate="visible"
-        className="flex flex-col items-end md:h-[75vh] h-[65vh] w-[30%] max-w-md lg:mr-[5%] fixed justify-end  bottom-[12.5vh] left-[60%] md:mr-[10%] md:opacity-100 opacity-0"
+        className="hidden md:flex flex-col items-end md:h-[75vh] h-[65vh] w-[30%] max-w-md lg:mr-[5%] fixed justify-end  bottom-[12.5vh] left-[60%] md:mr-[10%]"
       >
         <Panda className="lg:h-[58%] lg:mr-[-0.5%] h-[45%]" />
       </motion.div>
