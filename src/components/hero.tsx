@@ -30,7 +30,7 @@ export default function Hero() {
       <div className=" hero-container flex flex-col h-[100%] md:w-[80%] w-[95%] justify-center items-start">
         <Flower className="xl:mb-[5%] mb-[3%]" />
         <motion.div variants={textVariants} initial="hidden" whileInView="visible" viewport={{ once: true }}>
-          <div className="font-bold md:text-4xl text-3xl text-[#504256]">
+          <div className="font-bold md:text-4xl text-3xl text-[#524956]">
             Hi, I&apos;m
           </div>
           <div className="font-extrabold text-white md:text-[4rem] text-6xl myName lg:leading-tight">

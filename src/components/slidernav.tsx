@@ -19,28 +19,50 @@ export function SliderNav() {
       ctct: '159px'
     }
 
+    const whichToColor = {
+      home: '--hcolor',
+      abt: '--acolor',
+      proj: '--pcolor',
+      skls: '--scolor',
+      ctct: '--ccolor',
+    }
+
   
 
     function bloom(distance: string) {
-      document.documentElement.style.setProperty('--flowertop', distance)
-      console.log(disttop.home);
+      document.documentElement.style.setProperty('--flowertop', distance);
+      document.documentElement.style.setProperty('--hcolor', 'var(--darkGreen')
+      document.documentElement.style.setProperty('--acolor', 'var(--darkGreen')
+      document.documentElement.style.setProperty('--scolor', 'var(--darkGreen')
+      document.documentElement.style.setProperty('--pcolor', 'var(--darkGreen')
+      document.documentElement.style.setProperty('--ccolor', 'var(--darkGreen')
+      console.log(whichToColor.abt);
+    }
+
+    function changecolor(Element: string) {
+      document.documentElement.style.setProperty(Element, 'var(--pandaDark)')
     }
 
 
     if (window.scrollY >= (home.offsetTop) && window.scrollY < (home.offsetTop + home.offsetHeight)) {
       bloom(disttop.home);
+      changecolor(whichToColor.home);
     }
     if (window.scrollY >= (home.offsetTop + home.offsetHeight) && window.scrollY < (about.offsetTop + about.offsetHeight)) {
       bloom(disttop.abt);
+      changecolor(whichToColor.abt);
     }
     if (window.scrollY >= (about.offsetTop + about.offsetHeight) && window.scrollY < (port.offsetTop + port.offsetHeight)) {
       bloom(disttop.proj);
+      changecolor(whichToColor.proj);
     }
     if (window.scrollY >= (port.offsetTop + port.offsetHeight) && window.scrollY < (skills.offsetTop + skills.offsetHeight)) {
       bloom(disttop.skls);
+      changecolor(whichToColor.skls);
     }
     if (window.scrollY >= (skills.offsetTop + skills.offsetHeight) && window.scrollY < (contact.offsetTop + contact.offsetHeight)) {
       bloom(disttop.ctct);
+      changecolor(whichToColor.ctct);
     }
     
   })

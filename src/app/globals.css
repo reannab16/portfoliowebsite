@@ -19,6 +19,11 @@
   --lightPink: #fbe4ea;
 
   --flowertop: -1px;
+  --hcolor:var(--pandaDark);
+  --acolor:var(--darkGreen);
+  --pcolor:var(--darkGreen);
+  --scolor:var(--darkGreen);
+  --ccolor:var(--darkGreen);
 
 }
 
@@ -117,6 +122,30 @@ body {
   background-repeat: no-repeat;
   top: var(--flowertop);
   right: -24px;
+}
+
+#homelink {
+  color:var(--hcolor);
+}
+
+#aboutlink {
+  color:var(--acolor);
+}
+
+#projectsArtlink {
+  color:var(--pcolor);
+}
+
+#skillslink {
+  color:var(--scolor);
+}
+
+#contactlink {
+  color:var(--ccolor);
+}
+
+#homelink:hover, #aboutlink:hover, #projectsArtlink:hover, #skillslink:hover, #contactlink:hover {
+  color: var(--pandaDark)
 }
 
 
