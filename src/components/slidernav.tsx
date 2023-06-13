@@ -3,6 +3,8 @@ import { Cherry } from "./icons";
 
 export function SliderNav() {
 
+ if (typeof window !== "undefined") {
+
   window.addEventListener("scroll", function() {
     var home: any = document.getElementById("home");
     var about: any = document.getElementById("about");
@@ -43,6 +45,8 @@ export function SliderNav() {
     }
     
   })
+ }
+
 
 
 
