@@ -1,5 +1,4 @@
 "use client"
-import { Cherry } from "./icons";
 
 export function SliderNav() {
 
