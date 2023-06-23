@@ -2,6 +2,7 @@
 import React from "react";
 import { Me } from "./icons";
 import { motion } from "framer-motion";
+import { Link } from "react-scroll";
 
 const aboutVariants = {
   hidden: { opacity: 0, scale: 0.9 },
@@ -71,9 +72,16 @@ export default function About() {
             seamlessly blend functionality and artistic expression. <br />
             <br />
             Check out{" "}
-            <a href="#projects" className="text-[#65a888] italic work-a">
+            <Link
+              to="projects"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+              className="text-[#65a888] italic work-a hover:cursor-pointer"
+            >
               my work
-            </a>{" "}
+            </Link>{" "}
             below!
           </div>
         </motion.div>
@@ -81,5 +89,3 @@ export default function About() {
     </div>
   );
 }
-
-

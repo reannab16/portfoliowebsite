@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import { SideSocials } from "@/components/sidesocials";
 import SideEmail from "@/components/sideemail";
 import { SliderNav } from "@/components/slidernav";
+import PopUp from "@/components/popup";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,10 +20,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <SliderNav/>
-        <SideEmail />
-        <SideSocials />
+        <div className="mainContainer w-full h-full">
+          <SliderNav />
+          <SideEmail />
+          <SideSocials />
         {children}
+        </div>
+      {/* <body className={`${inter.className} blurred`}> */}
       </body>
     </html>
   );

@@ -3,6 +3,7 @@ import React from "react";
 import { Flower } from "./icons";
 import { Panda } from "./icons";
 import { motion } from "framer-motion";
+import { Link } from "react-scroll";
 
 const textVariants = {
   hidden: { opacity: 0, y: 50 },
@@ -50,12 +51,16 @@ export default function Hero() {
           viewport={{ once: true }}
           className="h-[auto] mt-[7.5%]"
         >
-          <a
-            href="#contact"
-            className=" duration-300 hover:bg-[#524956] rounded-full hover:text-[#65a888] font-bold text-base bg-[#65a888] text-[#524956] p-4 md:pl-10 md:pr-10 pl-5 pr-5 hover:-translate-y-[2px]"
+          <Link
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+            className=" duration-300 hover:bg-[#524956] rounded-full hover:text-[#65a888] font-bold text-base bg-[#65a888] text-[#524956] p-4 md:pl-10 md:pr-10 pl-5 pr-5 hover:-translate-y-[2px] hover:cursor-pointer"
           >
             contact me!
-          </a>
+          </Link>
         </motion.div>
       </div>
     </div>

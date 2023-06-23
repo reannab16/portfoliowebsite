@@ -468,3 +468,9 @@ body {
   }
 }
 
+.blurred.active {
+  filter: blur(20px);
+  pointer-events: none;
+  user-select: none;
+}
+

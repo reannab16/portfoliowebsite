@@ -4,7 +4,7 @@ import { Panda } from "@/components/icons";
 import { Cherry } from "@/components/icons";
 import { SliderNav } from "@/components/slidernav";
 import About from "@/components/about";
-import Projects from "@/components/projects";
+import { Projects } from "@/components/projects";
 import Skills from "@/components/skills";
 import Contact from "@/components/contact";
 import { motion } from "framer-motion";
@@ -42,7 +42,7 @@ export default function Home() {
         animate="visible"
         className="hidden md:flex flex-col items-end md:h-[75vh] h-[65vh] w-[30%] max-w-md lg:mr-[5%] fixed justify-end  bottom-[12.5vh] left-[60%] md:mr-[10%]"
       >
-        <Panda className="lg:h-[58%] lg:mr-[-0.5%] h-[45%]" />
+        <Panda className="lg:h-[58%] lg:mr-[-0.5%] h-[45%] blurred" />
       </motion.div>
     </main>
   );

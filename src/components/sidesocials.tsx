@@ -34,7 +34,7 @@ export function SideSocials() {
   ];
 
   return (
-    <div className="side-socials max-[820px]:opacity-0">
+    <div className="side-socials max-[820px]:opacity-0 blurred">
       {socials.map((social, index) => (
         <a key={index} href={social.href} target="_blank">
           <FontAwesomeIcon icon={social.icon} className="h-[20px]"/>

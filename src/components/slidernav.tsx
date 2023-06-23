@@ -1,4 +1,5 @@
 "use client"
+import { Link } from "react-scroll";
 
 export function SliderNav() {
 
@@ -72,17 +73,21 @@ export function SliderNav() {
 
 
   return (
-    <div className="flex flex-row items-center justify-center nav md:opacity-100 opacity-0">
+    <div className="flex flex-row items-center justify-center nav md:opacity-100 opacity-0 blurred">
       <div className="sans-class nav flex flex-col gap-y-4 justify-center items-end mb-auto text-sm text-[#65a888] pr-[5px]">
         {navLinks.map((item) => {
           return (
-            <a
+            <Link
               key={item.name}
-              href={item.href}
-              className="hover:text-[#524956] pl-2 pr-2 mt-1 rounded-full duration-300 nav-items" id={item.id}
+              to={item.href}
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+              className="hover:text-[#524956] pl-2 pr-2 mt-1 rounded-full duration-300 nav-items hover:cursor-pointer" id={item.id}
             >
               {item.name}
-            </a>
+            </Link>
           );
         })}
       </div>
@@ -99,27 +104,27 @@ type navLink = {
 const navLinks: navLink[] = [
   {
     name: "home",
-    href: "#home",
+    href: "home",
     id: "homelink",
   },
   {
     name: "about",
-    href: "#about",
+    href: "about",
     id: "aboutlink",
   },
   {
     name: "projects & art",
-    href: "#projects",
+    href: "projects",
     id: "projectsArtlink",
   },
   {
     name: "skills",
-    href: "#skills",
+    href: "skills",
     id: "skillslink",
   },
   {
     name: "contact",
-    href: "#contact",
+    href: "contact",
     id: "contactlink",
   },
 ];
