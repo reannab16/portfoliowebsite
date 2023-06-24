@@ -6,7 +6,9 @@ import PopUp from "./popup";
 
 function Projects() {
   const [visible, setVisible] = useState<Boolean>(false);
-  const [currentProject, setCurrentProject] = useState<ProjectType | undefined>(undefined);
+  const [currentProject, setCurrentProject] = useState<ProjectType | undefined>(
+    undefined
+  );
 
   return (
     <div
@@ -87,8 +89,11 @@ function Projects() {
                   whileInView="visible"
                   viewport={{ once: true }}
                   key={item.name}
-                  className="artboxes bg-[var(--lightPink)] h-[41%] w-[48%] mb-[-1.5%] relative flex flex-col items-center justify-center"
-                  href=""
+                  className="artboxes bg-[var(--lightPink)] h-[41%] w-[48%] mb-[-1.5%] relative flex flex-col items-center justify-center cursor-pointer"
+                  onClick={() => {
+                    setCurrentProject(item);
+                    setVisible(true);
+                  }}
                 >
                   <img
                     src={item.src}
@@ -135,42 +140,41 @@ const projects: ProjectType[] = [
   {
     name: "firstportfolio",
     src: "Portfolio0.png",
-    popupsrc:"Portfolio00.png",
-    projectsrc:"https://reannab16.github.io/my-portfolio/",
-    git:"https://github.com/reannab16/my-portfolio/",
-    title:"My First Portfolio",
-    text:"This was my first portfolio website! Incredibly personalized with many cool features, hand-drawn illustrations and animations.",
+    popupsrc: "Portfolio00.png",
+    projectsrc: "https://reannab16.github.io/my-portfolio/",
+    git: "https://github.com/reannab16/my-portfolio/",
+    title: "My First Portfolio",
+    text: "This was my first portfolio website! Incredibly personalized with many cool features, hand-drawn illustrations and animations.",
     skills: ["HTML", "CSS", "JavaScript"],
   },
   {
     name: "tictactoe",
     src: "tictactoe.png",
-    popupsrc:"tictactoe.png",
-    projectsrc:"https://reannab16.github.io/tic-tac-toe/",
-    git:"https://github.com/reannab16/tic-tac-toe",
-    title:"Tic-Tac-Toe",
-    text:"A simple Tic Tac Toe game made with JavaScript.",
+    popupsrc: "tictactoe.png",
+    projectsrc: "https://reannab16.github.io/tic-tac-toe/",
+    git: "https://github.com/reannab16/tic-tac-toe",
+    title: "Tic-Tac-Toe",
+    text: "A simple Tic Tac Toe game made with JavaScript.",
     skills: ["HTML", "CSS", "JavaScript"],
   },
   {
     name: "mamawebsite",
     src: "fifty0.png",
-    popupsrc:"fifty1.png",
-    projectsrc:"https://reannab16.github.io/mama-birthday-website/",
-    git:"https://github.com/reannab16/mama-birthday-website",
-    title:"Birthday Invite + Countdown",
-    text:"A website I designed and coded for my mum's 50th birthday, functioning as a birthday invite, with a countdown page presented after users RSVP.",
+    popupsrc: "fifty1.png",
+    projectsrc: "https://reannab16.github.io/mama-birthday-website/",
+    git: "https://github.com/reannab16/mama-birthday-website",
+    title: "Birthday Invite + Countdown",
+    text: "A website I designed and coded for my mum's 50th birthday, functioning as a birthday invite, with a countdown page presented after users RSVP.",
     skills: ["HTML", "Tailwind CSS", "Next.js", "TypeScript"],
   },
   {
-    name: "unmade",
-    src: "",
-    popupsrc:"",
-    projectsrc:"",
-    git:"",
-    title:"",
-    text:"",
-    skills: [],
+    name: "nightbloom",
+    src: "nightbloom.webp",
+    popupsrc: "nightbloom.webp",
+    projectsrc: "https://nightbloom.ai/",
+    title: "Nightbloom AI",
+    text: "Search engine that locates AI-generated images. Allows users to filter, view, download and favourite images from varying resolutions and quality.",
+    skills: ["Next.js", "Framer Motion", "React", "TypeScript", "Material UI"],
   },
 ];
 
@@ -178,41 +182,37 @@ const Artwork: ProjectType[] = [
   {
     name: "UFO",
     src: "UFO-compress.jpeg",
-    popupsrc:"",
-    projectsrc:"",
-    git:"",
-    title:"",
-    text:"",
+    popupsrc: "UFO-compress.jpeg",
+    projectsrc: "https://www.redbubble.com/shop/ap/84759086",
+    title: "UFO painting",
+    text: "Painting done in acrylics, available for purchase on my redbubble!",
     skills: [],
   },
   {
     name: "butterflygirl",
     src: "butterfly-girl-compress.jpeg",
-    popupsrc:"",
-    projectsrc:"",
-    git:"",
-    title:"",
-    text:"",
+    popupsrc: "butterfly-girl-compress.jpeg",
+    projectsrc: "https://www.redbubble.com/shop/ap/52457508",
+    title: "Butterfly Girl",
+    text: "Artwork done with watercolours and ink pen, available for purchase on my redbubble!",
     skills: [],
   },
   {
     name: "rose",
     src: "rose-compress.jpeg",
-    popupsrc:"",
-    projectsrc:"",
-    git:"",
-    title:"",
-    text:"",
+    popupsrc: "rose-compress.jpeg",
+    projectsrc: "https://www.redbubble.com/shop/ap/38792698",
+    title: "Rose Tinted Lenses",
+    text: "Artwork done with watercolours and ink pen, available for purchase on my redbubble!",
     skills: [],
   },
   {
     name: "wildflower",
     src: "wildflower-compress.jpeg",
-    popupsrc:"",
-    projectsrc:"",
-    git:"",
-    title:"",
-    text:"",
+    popupsrc: "wildflower-compress.jpeg",
+    projectsrc: "https://society6.com/art/meet-me-where-the-wild-things-grow2119756",
+    title: "Where Wildflowers Grow",
+    text: "Oil Painting on canvas",
     skills: [],
   },
 ];
@@ -247,7 +247,7 @@ type ProjectType = {
   src: string;
   popupsrc: string;
   projectsrc: string;
-  git: string;
+  git?: string;
   title: string;
   text: string;
   skills: string[];

@@ -41,19 +41,29 @@ export default function PopUp({ project, onClick }: PopUpProps) {
       <div className="w-[70%] flex flex-col justify-between items-start mr-5">
         <div className="font-extrabold text-[var(--pandaLight)] text-4xl ml-5 flex items-center justify-center">
           <div>{project!.title}</div>
-          <a href={project?.projectsrc} target="blank">
+          <a
+            href={project?.projectsrc}
+            target="blank"
+            className="flex items-center justify-center"
+          >
             <FontAwesomeIcon
               icon={faArrowUpRightFromSquare}
               className="h-5 ml-2 hover:text-[var(--darkGreen)] duration-300 cursor-pointer hover:-translate-y-[2px]"
             />
           </a>
 
-            <a href={project?.git} target="blank">
+          {project?.git && (
+            <a
+              href={project?.git}
+              target="blank"
+              className="flex items-center justify-center"
+            >
                 <FontAwesomeIcon
-                icon={faGithub}
-                className="h-5 ml-2 hover:text-[var(--darkGreen)] duration-300 cursor-pointer hover:-translate-y-[2px]"
+                  icon={faGithub}
+                  className="h-5 ml-2 hover:text-[var(--darkGreen)] duration-300 cursor-pointer hover:-translate-y-[2px]"
                 />
             </a>
+          )}
         </div>
         <div className="text-[var(--pandaLight)] text-base ml-5 mt-2">
           {project!.text}
