@@ -10,7 +10,7 @@ const headingVariants = {
     y: 0,
     transition: {
       duration: 1,
-      delay: 0.5,
+      delay: 0,
     },
   },
 };
@@ -22,7 +22,7 @@ const skillVariants = {
     opacity: 1,
     transition: {
       duration: 1,
-      delay: 0.5,
+      delay: 0,
       staggerChildren: 1,
     },
   },
@@ -62,13 +62,13 @@ export default function Skills() {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        className="text-[var(--pandaLight)] flex items-center justify-center right-4 text-6xl font-extrabold relative skills after:h-[0.35rem] after:w-[15.6rem] after:bg-[var(--lightPink)] after:absolute after:top-[calc(100% + 1rem)] after:-left-5"
+        className="text-[var(--pandaLight)] flex items-center justify-center right-4 text-6xl font-extrabold relative skills after:h-[0.35rem] after:w-[15.6rem] after:bg-[var(--lightPink)] after:absolute after:top-[calc(100% + 1rem)] after:-left-5 z-10"
       >
         SKILLS
-        <MiniFlower className="absolute top-[2.1rem] h-16 left-48" />
+        <MiniFlower className="absolute top-[2.1rem] h-16 left-48 z-10" />
       </motion.div>
 
-      <div className="flex flex-row items-center justify-center flex-wrap md:w-[73%] w-[90%] h-[60%] md:h-[70vh] max-w-[40rem] max-h-[20rem] md:max-lg:max-h-[90rem] max-sm:max-h-[90rem] mt-4">
+      <div className="flex flex-row items-center justify-center flex-wrap md:w-[73%] w-[90%] h-[60%] md:h-[70vh] max-w-[40rem] max-h-[20rem] md:max-lg:max-h-[90rem] max-sm:max-h-[90rem] mt-4 -z-0 relative">
         {skills.map((item) => {
           return (
             <motion.div
@@ -77,7 +77,7 @@ export default function Skills() {
             whileInView="visible"
             viewport={{ once: true }}
               key={item.name}
-              className="bg-[var(--darkGreen)] flex items-center justify-center pr-5 pl-5 p-2 rounded-full text-slate-100 text-base m-2"
+              className="bg-[var(--darkGreen)] flex items-center justify-center pr-5 pl-5 p-2 rounded-full text-slate-100 text-base m-2 -z-0 relative"
             >
               {item.name}
             </motion.div>

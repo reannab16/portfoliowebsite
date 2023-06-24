@@ -10,7 +10,7 @@ const headingVariants = {
     y: 0,
     transition: {
       duration: 1,
-      delay: 0.5,
+      delay: 0,
     },
   },
 };
@@ -22,7 +22,7 @@ const contactVariants = {
     opacity: 1,
     transition: {
       duration: 1,
-      delay: 0.5,
+      delay: 0,
       staggerChildren: 0.2,
     },
   },

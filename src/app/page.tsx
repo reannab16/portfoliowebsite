@@ -18,7 +18,7 @@ const imgVariants = {
       stiffness: 100,
       damping: 10,
       duration: 1,
-      delay: 0.2,
+      delay: 0,
     },
   },
 };
