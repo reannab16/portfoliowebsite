@@ -37,7 +37,7 @@ export default function PopUp({ project, onClick }: PopUpProps) {
         <img
           src={project?.popupsrc}
           alt="first portfolio picture"
-          className=" w-[30%] object-contain rounded-xl sm:ml-5 ml-2 sm:block hidden"
+          className=" w-[30%] object-contain rounded-xl sm:ml-5 sm:block hidden"
         />
         <div className="sm:w-[70%] flex flex-col justify-between items-start sm:mr-5">
           <div className="font-extrabold text-[var(--pandaLight)] xl:text-4xl text-3xl ml-5 flex items-center justify-center">
