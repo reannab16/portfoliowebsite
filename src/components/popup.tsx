@@ -71,9 +71,9 @@ export default function PopUp({ project, onClick }: PopUpProps) {
             </div>
 
             <div className="ml-5 flex flex-row items-center justify-start flex-wrap mt-2">
-            {project?.skills.map((skill) => {
+            {project?.skills.map((skill, index) => {
                 return (
-                <div className="bg-[var(--darkGreen)] flex items-center justify-center pr-4 pl-4 p-1 rounded-full text-slate-100 xl:text-base text-sm xl:m-2 m-1">
+                <div key={index} className="bg-[var(--darkGreen)] flex items-center justify-center pr-4 pl-4 p-1 rounded-full text-slate-100 xl:text-base text-sm xl:m-2 m-1">
                     {skill}
                 </div>
                 );
