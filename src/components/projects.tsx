@@ -171,7 +171,7 @@ const projects: ProjectType[] = [
     name: "nightbloom",
     src: "nightbloom.webp",
     popupsrc: "nightbloom.webp",
-    projectsrc: "https://nightbloom.ai/",
+    projectsrc: "https://nightbloomai.github.io/frontend/",
     title: "Nightbloom AI",
     text: "Search engine that locates AI-generated images. Allows users to filter, view, download and favourite images from varying resolutions and quality.",
     skills: ["Next.js", "Framer Motion", "React", "TypeScript", "Material UI"],
