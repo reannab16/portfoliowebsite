@@ -73,7 +73,7 @@ export function SliderNav() {
 
 
   return (
-    <div className="flex flex-row items-center justify-center nav md:opacity-100 opacity-0 blurred">
+    <div className="sm:flex flex-row items-center justify-center nav md:opacity-100 opacity-0 blurred hidden">
       <div className="sans-class nav flex flex-col gap-y-4 justify-center items-end mb-auto text-sm text-[#65a888] pr-[5px]">
         {navLinks.map((item) => {
           return (

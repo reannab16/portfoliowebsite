@@ -25,10 +25,10 @@ const textVariants = {
 export default function Hero() {
   return (
     <div
-      className="bg-[#cddfae] h-[100vh] w-[60vw] flex flex-col justify-center items-center max-w-[1280px] sm:pl-0 pl-4"
+      className="bg-[#cddfae] h-[100vh] w-[60vw] flex flex-col justify-center items-center max-w-[1280px] sm:pl-0 pl-4 relative -z-0"
       id="home"
     >
-      <div className=" hero-container flex flex-col h-[100%] md:w-[80%] w-[95%] justify-center items-start">
+      <div className=" hero-container flex flex-col h-[100%] md:w-[80%] w-[95%] justify-center items-start relative">
         <Flower className="xl:mb-[5%] mb-[3%]" />
         <motion.div variants={textVariants} initial="hidden" whileInView="visible" viewport={{ once: true }}>
           <div className="font-bold md:text-4xl text-3xl text-[#524956]">
@@ -38,7 +38,7 @@ export default function Hero() {
             REANNA BAKSHANI
           </div>
 
-          <div className="md:text-lg text-base w-[83%] text-[#524956] xl:pb-0 pb-1">
+          <div className="md:text-lg text-base w-[83%] text-[#524956] xl:pb-0 sm:pb-1 pb-5">
             A designer and developer, based in London, who loves creative web
             design! Feel free to contact me or check out my work on GitHub!
           </div>
@@ -57,7 +57,7 @@ export default function Hero() {
             smooth={true}
             offset={50}
             duration={500}
-            className=" duration-300 hover:bg-[#524956] rounded-full hover:text-[#65a888] font-bold text-base bg-[#65a888] text-[#524956] p-4 md:pl-10 md:pr-10 pl-5 pr-5 hover:-translate-y-[2px] hover:cursor-pointer"
+            className=" duration-300 hover:bg-[#524956] rounded-full hover:text-[#65a888] font-bold text-base bg-[#65a888] text-[#524956] p-4 md:pl-10 md:pr-10 px-5 hover:-translate-y-[2px] hover:cursor-pointer"
           >
             contact me!
           </Link>

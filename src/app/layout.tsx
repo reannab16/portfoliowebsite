@@ -4,6 +4,7 @@ import { SideSocials } from "@/components/sidesocials";
 import SideEmail from "@/components/sideemail";
 import { SliderNav } from "@/components/slidernav";
 import PopUp from "@/components/popup";
+import { MobileNav } from "@/components/mobileNav";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,6 +25,8 @@ export default function RootLayout({
           <SliderNav />
           <SideEmail />
           <SideSocials />
+          <MobileNav/>
+          
         {children}
         </div>
       {/* <body className={`${inter.className} blurred`}> */}
