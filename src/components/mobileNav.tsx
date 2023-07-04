@@ -24,17 +24,17 @@ export function MobileNav() {
       <div
         className={`${
           isOpen ? "rotate-45 translate-y-2" : ""
-        } w-7 h-1 rounded-full bg-white fixed top-5 right-5 duration-300`}
+        } w-7 h-1 rounded-full bg-white fixed top-4 right-4 duration-300`}
       ></div>
       <div
         className={`${
           isOpen ? "opacity-0" : "opacity-1"
-        } w-7 h-1 rounded-full bg-white fixed top-7 right-5 duration-300`}
+        } w-7 h-1 rounded-full bg-white fixed top-6 right-4 duration-300`}
       ></div>
       <div
         className={` ${
           isOpen ? "-rotate-45 -translate-y-2" : ""
-        } w-7 h-1 rounded-full bg-white fixed top-9 right-5 duration-300`}
+        } w-7 h-1 rounded-full bg-white fixed top-8 right-4 duration-300`}
       ></div>
     </div>
   );
