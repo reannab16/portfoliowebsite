@@ -474,3 +474,10 @@ body {
   user-select: none;
 }
 
+.bloomedbg {
+  background-image: url(https://reannab16.github.io/portfoliowebsite/miniFlower.svg);
+  background-color: transparent;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+

@@ -118,7 +118,7 @@ export function MenuItems(isOpen: any) {
           whileTap={{ scale: 0.95 }}
           className="p-2 gap-x-2 flex items-center justify-center"
         >
-          <div className={`duration-300 ${(isBloomed == item.number) ? 'bg-[url(https://reannab16.github.io/portfoliowebsite/miniFlower.svg)] h-9 w-9':'h-3 w-3 rounded-full bg-none border-2 border-[var(--lightPink)]'}`}></div>
+          <div className={`duration-300 ${(isBloomed == item.number) ? 'bloomedbg h-9 w-9':'h-3 w-3 rounded-full bg-none border-2 border-[var(--lightPink)]'}`}></div>
           <div className={`duration-300 ${(isBloomed == item.number) ? 'text-white':'text-[var(--lightPink)]'} ?}`}>{item.name}</div>
         </motion.a>
       ))}
