@@ -16,7 +16,7 @@ export function MobileNav() {
         className={`${
           isOpen
             ? "fixed opacity-1 h-screen w-screen top-0 right-0"
-            : "opacity-0"
+            : "hidden"
         } duration-500 sm:hidden bg-[var(--pandaLight)]`}
       >
         <MenuItems/>
