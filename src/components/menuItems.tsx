@@ -58,7 +58,7 @@ const navBlocks: navType[] = [
   },
   {
     name: "contacts",
-    href: "#contacts",
+    href: "#contact",
     number: 4,
   },
 ];
